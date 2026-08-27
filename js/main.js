@@ -23,10 +23,17 @@ const TUTORIALS = [
     url: "https://v.douyin.com/GYnNlXyH6qg/"
   },
   {
-    title: "如何备份导入存档",
-    desc: "游戏存档备份与导入全流程，换机、重装不丢进度。",
+    title: "电视连接教程",
+    desc: "电视/显示器连接设置，从插线到画面一步步来。",
     tag: "入门",
     tagClass: "tag-blue",
+    url: "tutorial-tv.html"
+  },
+  {
+    title: "如何备份导入存档",
+    desc: "游戏存档备份与导入全流程，换机、重装不丢进度。",
+    tag: "进阶",
+    tagClass: "",
     url: "tutorial-backup.html"
   },
   {
