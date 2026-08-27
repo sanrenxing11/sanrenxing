@@ -27,7 +27,7 @@ const TUTORIALS = [
     desc: "电视/显示器连接设置，从插线到画面一步步来。",
     tag: "入门",
     tagClass: "tag-blue",
-    url: "tutorial-tv.html"
+    url: "https://v.douyin.com/FpMBPdW59PM/"
   },
   {
     title: "如何备份导入存档",
