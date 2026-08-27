@@ -20,7 +20,7 @@ const TUTORIALS = [
     desc: "从开机到双系统切换，保姆级图文教程，新手必看。",
     tag: "入门",
     tagClass: "tag-blue",
-    url: "tutorial-system.html"
+    url: "https://v.douyin.com/GYnNlXyH6qg/"
   },
   {
     title: "如何备份导入存档",
@@ -140,8 +140,11 @@ function renderTutorials() {
   list.innerHTML = TUTORIALS.map(function (t) {
     // 有 url 的教程整卡可点击跳转到对应页面
     if (t.url) {
+      // 外链（http/https 开头）在新窗口打开，站内页面保持原样
+      var external = /^https?:\/\//.test(t.url);
+      var linkAttrs = external ? ' target="_blank" rel="noopener"' : "";
       return (
-        '<a class="tutorial-item tutorial-link" href="' + escapeHtml(t.url) + '">' +
+        '<a class="tutorial-item tutorial-link" href="' + escapeHtml(t.url) + '"' + linkAttrs + '>' +
         '<span class="item-icon">📖</span>' +
         '<div class="item-body">' +
         "<h3>" + escapeHtml(t.title) + "</h3>" +
